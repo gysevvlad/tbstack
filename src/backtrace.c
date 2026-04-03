@@ -67,7 +67,7 @@ static int backtrace_thread(unw_accessors_t *accessors, void *arg)
 
     do {
         unw_word_t ip, sp = -1, off;
-        static char buf[512];
+        static char buf[4096];
         size_t len;
         int is_sig;
 
